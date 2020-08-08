@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Version>1.0.0.0</Version>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+	<RuntimeFrameworkVersion>2.1.2</RuntimeFrameworkVersion>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <AssemblyName>Xyh.Portal.Application</AssemblyName>
+    <PackageId>Yc.Mw.Application</PackageId>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace>Xyh.Portal</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>E:\PjXiYuShengDian\SourceCode\Xyh.Portal\src\Xyh.Portal.Application\Xyh.Portal.Application.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netcoreapp2.1\Yc.Portal.Application.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Abp.EntityFrameworkCore" Version="3.7.2" />
+    <PackageReference Include="Abp.AutoMapper" Version="3.7.2" />
+    <PackageReference Include="FastMember.Signed" Version="1.4.1" />
+    <PackageReference Include="IdentityServer4.AccessTokenValidation" Version="2.6.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xyh.It.Helper\Xyh.It.Helper.csproj" />
+    <ProjectReference Include="..\Xyh.Portal.Core\Xyh.Portal.Core.csproj" />
+    <ProjectReference Include="..\Xyh.Portal.EntityFrameworkCore\Xyh.Portal.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+</Project>

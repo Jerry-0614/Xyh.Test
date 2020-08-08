@@ -1,0 +1,11 @@
+﻿{
+  "culture": "en",
+  "texts": {
+    "HelloWorld": "Hello World!",
+    "ChangeLanguage": "Change language",
+    "HomePage": "HomePage",
+    "About": "About",
+    "Home_Description": "Welcome to Portal...",
+    "About_Description": "Made by Yuecheng Group IT-Center"
+  }
+}

@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Xyh.Portal.Web</name>
+    </assembly>
+    <members>
+        <member name="T:Xyh.Portal.Web.Controllers.FileController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Xyh.Portal.Web.Controllers.FileController.#ctor(Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+            
+            </summary>
+            <param name="hostingEnvironment"></param>
+        </member>
+        <member name="M:Xyh.Portal.Web.Controllers.FileController.DownloadFile(System.String,System.String,System.Boolean)">
+            <summary>
+            规范：文件统一下载接口
+            </summary>
+            <param name="fileName">文件名</param>
+            <param name="folderName">文件存储在服务器上的文件夹名称</param>
+            <param name="isRenamed">上传后是否需要重命名</param>
+            <returns></returns>
+        </member>
+        <member name="M:Xyh.Portal.Web.Controllers.FileController.UploadFile(System.Collections.Generic.List{Microsoft.AspNetCore.Http.IFormFile},System.String,System.Boolean)">
+            <summary>
+            规范：统一上传文件接口:文件大小限制为50MB
+            </summary>
+            <param name="files">文件流：支持多文件</param>
+            <param name="folderName">文件存储在服务器上的文件夹名称，默认上传至UploadFiles下</param>
+            <param name="isRenamed">上传后是否需要重命名</param>
+            <returns></returns>
+        </member>
+        <member name="T:Xyh.Portal.Web.Startup.PortalNavigationProvider">
+            <summary>
+            This class defines menus for the application.
+            </summary>
+        </member>
+        <member name="T:Xyh.Portal.Web.Startup.PortalWebModule">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Xyh.Portal.Web.Startup.PortalWebModule.#ctor(Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+            
+            </summary>
+            <param name="env"></param>
+        </member>
+        <member name="M:Xyh.Portal.Web.Startup.PortalWebModule.PreInitialize">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Xyh.Portal.Web.Startup.PortalWebModule.Initialize">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Xyh.Portal.Web.Startup.PortalWebModule.PostInitialize">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>

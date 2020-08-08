@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Xyh.Portal.Application</name>
+    </assembly>
+    <members>
+        <member name="P:Xyh.Portal.Dto.FileOutput.FileNames">
+            <summary>
+            文件名
+            </summary>
+        </member>
+        <member name="P:Xyh.Portal.Dto.FileInput.filestr">
+            <summary>
+            文件内容字符串base64
+            </summary>
+        </member>
+        <member name="P:Xyh.Portal.Dto.FileInput.Extent">
+            <summary>
+            后缀名
+            </summary>
+        </member>
+        <member name="M:Xyh.Portal.Helper.FileHelper.GetContentType(System.String)">
+            <summary>
+            获取类型
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Xyh.Portal.Helper.FileHelper.GetMimeType(System.String)">
+            <summary>
+            文件类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Xyh.Portal.Helper.HttpClientHelper.PostAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.String)">
+            <summary>
+            发送Post请求
+            </summary>
+            <param name="url"></param>
+            <param name="content"></param>
+            <param name="contentType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Xyh.Portal.Helper.HttpClientHelper.PutAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.String)">
+            <summary>
+            发送Put请求
+            </summary>
+            <param name="url"></param>
+            <param name="content"></param>
+            <param name="contentType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Xyh.Portal.Helper.HttpClientHelper.DeleteAsync(System.String)">
+            <summary>
+            发送Delete请求
+            </summary>
+            <param name="url"></param>
+            <param name="content"></param>
+            <param name="contentType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Xyh.Portal.Helper.HttpClientHelper.GetAsync(System.String)">
+            <summary>
+            发送Get请求
+            </summary>
+            <param name="url"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Xyh.Portal.Helper.SsoHttpClientHelper.ApiToken">
+            <summary>
+            Oauth认证取得的TOKEN
+            </summary>
+        </member>
+        <member name="M:Xyh.Portal.Helper.SsoHttpClientHelper.PostAsync``1(System.String,System.String,System.Boolean)">
+            <summary>
+            post 请求
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="url"></param>
+            <param name="parameterts"></param>
+            <param name="useJsonParameter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Xyh.Portal.Helper.SsoHttpClientHelper.PostAsync``1(System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            向OMS系统Post请求
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="url"></param>
+            <param name="omsTenantId"></param>
+            <param name="parameterts"></param>
+            <param name="useJsonParameter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Xyh.Portal.Helper.SsoHttpClientHelper.GetApiToken">
+            <summary>
+            获取token
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Xyh.Portal.Helper.SsoHttpClientHelper.PostAsyncNoToken``1(System.String,System.String,System.Boolean)">
+            <summary>
+            post 请求
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="url"></param>
+            <param name="parameterts"></param>
+            <param name="useJsonParameter"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Xyh.Portal.PortalAppServiceBase">
+            <summary>
+            Derive your application services from this class.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,11 @@
+﻿{
+  "culture": "cn",
+  "texts": {
+    "HelloWorld": "您好！",
+    "ChangeLanguage": "切换语言",
+    "HomePage": "首页",
+    "About": "关于",
+    "Home_Description": "这个是默认的企业门户首页...",
+    "About_Description": "乐成集团信息技术部研发中心制作"
+  }
+}

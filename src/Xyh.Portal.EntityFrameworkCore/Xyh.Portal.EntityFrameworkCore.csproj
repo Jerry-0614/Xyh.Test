@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Version>1.0.0.0</Version>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+	<RuntimeFrameworkVersion>2.1.2</RuntimeFrameworkVersion>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <AssemblyName>Xyh.Portal.EntityFrameworkCore</AssemblyName>
+    <OutputType>Library</OutputType>
+    <PackageId>Yc.Mw.EntityFrameworkCore</PackageId>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+    <RootNamespace>Yc.Portal</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Migrations\20190411103352_AddColumn_BudgetCodeDict.ProjectName.cs" />
+    <Compile Remove="Migrations\20191016053415_addtableClassTimesAndTimeArea.cs" />
+    <Compile Remove="Migrations\20200227093005_addtableWorkBenchSectionAndSectionOrderIndex.cs" />
+    <Compile Remove="Migrations\20200227093005_addtableWorkBenchSectionAndSectionOrderIndex.Designer.cs" />
+    <Compile Remove="Migrations\20200324023603_addtableworkBenchTypeRelaiton.cs" />
+    <Compile Remove="Migrations\20200324023603_addtableworkBenchTypeRelaiton.Designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Abp.EntityFrameworkCore" Version="3.7.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.Design" Version="1.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.0">
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xyh.Portal.Core\Xyh.Portal.Core.csproj" />
+  </ItemGroup>
+</Project>
